@@ -23,7 +23,7 @@ The custom CNN has three convolutional blocks, each with two 3x3 convolutions, b
 - **Torchvision for data loading:** reliable download without extra dependencies.
 
 ## Experiments
-Four models were trained under identical settings (Adam, lr 1e-3, batch size 128, 5 epochs):
+Four models were trained under identical settings (Adam, lr 1e-3, batch size 128, 10 epochs):
 
 | Model | Trainable layers |
 |---|---|
@@ -48,4 +48,3 @@ Each run tracks train/validation loss and accuracy, plus validation precision, r
 - Accuracy rose steadily as more ResNet18 layers were unfrozen (46% → 70% → 79%). This suggests ImageNet features transfer poorly to 32x32 images without adaptation.
 - The custom CNN's test loss (0.56) was well below the ResNet18 variants (0.94 to 1.57), so its predictions were also better calibrated.
 - Training time was similar across the unfrozen models (39 to 56 s), so the custom CNN's advantage did not come at a large compute cost.
-- All models were trained for only 5 epochs without augmentation, so the ranking may change with longer training.
