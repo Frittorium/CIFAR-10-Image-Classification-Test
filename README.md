@@ -1,4 +1,4 @@
-# CIFAR-10 Image Classification: Transfer Learning vs. Custom CNN
+# CIFAR-10 Image Classification
 
 ## Dataset
 CIFAR-10 contains 60,000 32x32 RGB images across 10 classes (airplane, automobile, bird, cat, deer, dog, frog, horse, ship, truck). The 50,000 training images are split into 45,000 train and 5,000 validation. The official 10,000-image test set is held out for final evaluation.
